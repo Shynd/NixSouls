@@ -17,7 +17,7 @@ namespace NixSouls
     {
         private static ILogger _logger = LogManager.GetForClass();
 
-        // I bet this the last folder (01100001028087fa) is system-specific and is
+        // I bet the last folder (01100001028087fa) is system-specific and is
         // gonna fuck me over for now, just change it if you need to for now...
         private const string GAME_PATH = "/.steam/steam/steamapps/compatdata/374320/pfx/drive_c/users/steamuser/Application Data/DarkSoulsIII/01100001028087fa/";
         private const string SAVE_FILE = "DS30000.sl2";
