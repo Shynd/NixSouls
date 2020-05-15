@@ -2,6 +2,13 @@
 using System.IO;
 using NixSouls.Logging;
 
+// this program is supposed to take frequent backup of you game file while
+// you are playing. right now though it just makes a backup when you run
+// the program, and it overrides the old save if you have one, kind of shit
+// xdddddxd ;)
+// and that's assuming the save folder is the same as on my system which is
+// highly unlikely, so you have to change GAME_PATH as well.
+
 // heads-up: this only works if you're using the steam proton version of DSIII.
 
 namespace NixSouls
@@ -18,7 +25,7 @@ namespace NixSouls
 
         static void Main(string[] args)
         {
-            var home = System.Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            var home = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             var dir = $"{home}{GAME_PATH}";
             var path = $"{dir}{SAVE_FILE}";
 
