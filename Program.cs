@@ -2,7 +2,7 @@
 using System.IO;
 using NixSouls.Logging;
 
-// this program is supposed to take frequent backup of you game file while
+// this program is supposed to take frequent backup of your game file while
 // you are playing. right now though it just makes a backup when you run
 // the program, and it overrides the old save if you have one, kind of shit
 // xdddddxd ;)
