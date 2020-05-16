@@ -6,7 +6,7 @@ namespace NixSouls.Logging
 {
     public static class LogManager
     {
-        public static ILogger GetForClass([CallerFilePath] string className = "")
+        public static ILogger GetCurrentClassLogger([CallerFilePath] string className = "")
         {
             var cleanName = className.Split('/')
                 .LastOrDefault()

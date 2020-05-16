@@ -17,7 +17,7 @@ namespace NixSouls.Logging.Loggers
 
         public void Log(LogLevel level, string msg)
         {
-            Console.WriteLine($"[{level.ToString().ToLower()}] - [{ClassName}]: {msg}");
+            Console.WriteLine($"[{level.ToString().ToUpper()}] - [{ClassName.ToUpper()}]: {msg}");
         }
     }
 }
