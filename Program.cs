@@ -46,7 +46,7 @@ namespace NixSouls
 
             // test backup
             _logger.Log($"saving to: {dir}{BACKUP_PATH}/sav.bak");
-            File.Copy(path, $"{dir}{BACKUP_PATH}/sav.bak");
+            File.Copy(path, $"{dir}{BACKUP_PATH}/sav.bak", true);
         }
     }
 }
